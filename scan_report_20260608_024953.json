@@ -1,0 +1,19 @@
+{
+  "scan_target": "scanme.nmap.org",
+  "scan_time": "2026-06-08T02:49:45.336165",
+  "services": [
+    {
+      "port": 80,
+      "service": "HTTP",
+      "banner": "HTTP/1.1 200 OK\r",
+      "version": "Unknown"
+    },
+    {
+      "port": 22,
+      "service": "SSH",
+      "banner": "SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2.13",
+      "version": "OpenSSH 6.6.1"
+    }
+  ],
+  "vulnerabilities": []
+}
