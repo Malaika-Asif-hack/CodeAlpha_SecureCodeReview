@@ -1,32 +1,13 @@
-# 🔍 CodeAlpha - Secure Code Review & Vulnerability Scanner
+# Secure Code Review
 
-## Task 3: Secure Coding Review
+CodeAlpha cybersecurity internship project by Malaika Asif. This repository contains a written review of a Python network-service scanner, the source reviewed, and two example JSON reports.
 
-### Project Overview
-A comprehensive vulnerability and CVE scanner that performs:
-- Port scanning on common service ports
-- Banner grabbing (HTTP, FTP, SSH, etc.)
-- Service version detection
-- CVE lookup via NVD API
-- Security vulnerability assessment
-- JSON report generation
+## Start with the review
 
-### 📋 What This Scanner Detects
+Read [the security report](SECURITY_REPORT.md) for the original assessment. The scanner implementation is also published in [Vulnerability Scanner](https://github.com/Malaika-Asif-hack/Syntexhub_Vulnerability_Scanner).
 
-| Vulnerability Type | Detection Method | Risk Level |
-|-------------------|------------------|------------|
-| **SQL Injection** | Tests input fields with payloads | CRITICAL |
-| **Cross-Site Scripting (XSS)** | Injects JavaScript payloads | HIGH |
-| **Directory Traversal** | Tests path traversal patterns | HIGH |
-| **CVE Vulnerabilities** | NVD API integration | VARIES |
-| **Open Ports** | TCP port scanning | MEDIUM |
-| **Service Versions** | Banner grabbing & analysis | MEDIUM |
+## Scope and evidence
 
----
+The implementation collects service banners, estimates product versions, and requests matching CVE records. Its fallback can return mock CVE data. A banner match or an example report alone does not establish that a host is vulnerable.
 
-### 🚀 Installation
-
-```bash
-git clone https://github.com/Malaika-Asif-hack/CodeAlpha_SecureCodeReview.git
-cd CodeAlpha_SecureCodeReview
-pip install -r requirements.txt
+The report also discusses web vulnerability classes. The supplied scanner has no SQL injection, cross-site scripting, or directory traversal test routines. Treat those sections as background rather than implementation results.

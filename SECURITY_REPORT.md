@@ -7,6 +7,8 @@
 
 ---
 
+> **Evidence note.** The supplied scanner performs service discovery and keyword-based CVE lookup and includes a mock-data fallback. Web vulnerability classes discussed below are outside its implemented test coverage.
+
 ## 📋 Executive Summary
 
 A comprehensive security review was conducted on the Vulnerability/CVE Scanner tool. The tool successfully identifies open ports, detects service versions, and queries the NVD CVE database for known vulnerabilities.
